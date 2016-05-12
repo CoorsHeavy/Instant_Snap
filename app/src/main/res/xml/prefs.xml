@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="openCamera"
+        android:summary="Open the camera app after taking a picture"
+        android:title="Open the camera app" />
+
+    <ListPreference
+        android:defaultValue="auto"
+        android:entries="@array/flashvalues"
+        android:entryValues="@array/flashvalues"
+        android:key="flashMode"
+        android:summary="Use flash when taking a picture"
+        android:title="Flash" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="autofocus"
+        android:summary="Autofocus when taking a picture"
+        android:title="Autofocus" />
+
+</PreferenceScreen>
